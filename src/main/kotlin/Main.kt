@@ -1,4 +1,5 @@
 fun main() {
+
     println("Hello!")
 
     // val is immutable
@@ -40,5 +41,11 @@ fun main() {
     val areBothEven = num1 % 2 == 0 || num2 % 2 == 0 && num1 + num2 == 25
     // here && is always prioritized => num1 % 2 == 0 || (num2 % 2 == 0 && num1 + num2 == 25)
     println("Is num1 an even number? $areBothEven")
+
+    // calling null safety method
+    nullSafety()
+
+    // taking inout from user using a method
+    inputFromUser()
 
 }
