@@ -1,4 +1,7 @@
 fun inputFromUser(){
+
+    println("############  Input From User Method: ############")
+
     // taking input from user
     println("Enter your name: ")
     val input1 = readln() // takes input as string
