@@ -25,6 +25,8 @@ fun whenExpressions() {
         val evenOrOdd = when(inputAsInteger2) {
             0 -> "You entered 0"
             in 1..20 -> "You entered number between 10 and 20" // checking in a range
+            // in 1..10 - include 1,10
+            // in 1 until 10 - include 1, but not 10
             else -> "You entered a number which is greater that 20"
         }
         println(evenOrOdd)

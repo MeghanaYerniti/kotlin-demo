@@ -55,6 +55,21 @@ fun main() {
 
 
     // calling when expressions
-    whenExpressions()
+//    whenExpressions()
+
+    // try, catch, finally, throw
+
+    // arrays - immutable(we can change values in it but can't add or delete or change size
+//    arrays()
+
+    // loops - while,
+//    loops()
+
+    // iterables
+    println("Enter a string:")
+    val input = readln()
+    for (character in input) {
+        println(character)
+    }
 
 }
