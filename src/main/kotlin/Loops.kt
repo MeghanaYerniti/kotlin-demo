@@ -17,9 +17,13 @@ fun loops() {
         println(i)
     }
 
+    // using until
+    for(i in 10 until 20){
+        println(i)
+    }
+
     // Loop through a list
     val names = listOf("Meghana", "Abhi", "Riya")
-
     for (name in names) {
         println(name)
     }
@@ -28,6 +32,7 @@ fun loops() {
     for ((index, value) in names.withIndex()) {
         println("$index → $value")
     }
+
 
 //    while loop
 
