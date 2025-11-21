@@ -88,8 +88,26 @@ fun main() {
 //    val string1 = readln()
 //    println(string1.reverseString())
 
-//    lambda functions
-    lambdaFunctions()
+////    lambda functions
+//    lambdaFunctions()
+
+////    varargs - allows a function to accept 0 or more arguments of the same type.
+//    println(sumAll(1, 2))
+//    println(sumAll(1, 2, 3, 4))
+//    println(sumAll())
+//    val arr = intArrayOf(1, 2, 3)
+//    println(sumAll(*arr)) // spread operator → unpacks array into separate arguments.
+
+////    class, interface, abstract class, open class
+//
+////    sealed interface, sealed class
+////    All subclasses must be known at compile time, All subclasses must be in the same file, Useful for representing fixed types, like states, results, errors
+////    no need to write else for when expression bcz all cls are known at compile time only, for type-safe
+//
+////    enum classes - value of the enum values is always defined before compile time, this differ enum from sealed class
+//    println(greetMe(Country.USA))
+
+
 
 }
 
@@ -109,4 +127,24 @@ fun String.reverseString() : String {
         }
     }
     return finalString
+}
+
+fun sumAll(vararg numbers: Int): Int { // varargs should be last parameter of the function
+    var sum = 0
+    for (n in numbers) {
+        sum += n
+    }
+    return sum
+}
+
+// enum class
+enum class Country {
+    GERMANY, FRANCE, USA
+}
+fun greetMe (country: Country): String {
+    return when (country) {
+        Country.GERMANY -> "Hello Germany"
+        Country.FRANCE -> "Hello France"
+        Country.USA -> "Hello USA"
+    }
 }
